@@ -1,8 +1,8 @@
-# React + Vite
+# React BaseGame  
+Es un juego de memorización que permitira trabajar con algunos Hooks como: useState, useRoutes, useEffect, useRef para crear un juego multiple de memoria
+Autor @darwinyusef
+![js]([drawing.jpg](https://svgl.app/library/javascript.svg))
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aceptación de uso con atribución de uso académico no comercial
+- Legal atributtion [CC BY-NC-SA 2.5 CO CÓDIGO LEGAL](https://creativecommons.org/licenses/by-nc-sa/2.5/co/legalcode.es)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) 
