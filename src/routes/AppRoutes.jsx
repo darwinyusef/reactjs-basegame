@@ -14,6 +14,7 @@ const AppRoutes = () => {
     } else {
         return useRoutes([
             { path: "/", element: <Login /> },
+            { path: "/board", element: <BoardGame />  /*Eliminar luego de maquetar y generar interactividad*/ },
             { path: "/*", element: <NotFound /> },
         ]);
     }
