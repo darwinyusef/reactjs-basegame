@@ -1,0 +1,114 @@
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 80vh;
+  width: 100vw;
+}
+
+.initName {
+  display: flex;
+  background-color: rgb(223, 223, 223);
+  width: 76vw;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 340px; /* x5 820 x4 650 x3 500 x2 340  */
+}
+
+.cell {
+  width: 150px;
+  border-radius: 20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  background-color: aliceblue;
+  border: 1px solid black;
+  transition: all 0.8s ease;
+}
+
+.cell.close {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.cell.close::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -2px;
+  left: -2px;
+  z-index: 0;
+  background: white;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.cell:active {
+  background-color: white;
+  border: 1px solid black;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.cell.open {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.cell.open::before {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  z-index: -4;
+  background: transparent;
+}
+
+.cell.win {
+  visibility: hidden;
+}
+
+.ms {
+  background: white;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  width: auto;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+
+.ms p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.ms span {
+  padding: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+
+.ms span:hover {
+  color: black;
+}
